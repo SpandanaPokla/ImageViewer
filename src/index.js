@@ -1,10 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import Controller from "./common/Controller";
 
+/*
+This is the starting point of the application
+*/
 ReactDOM.render(
-    <span>
-        Image Viewer
-    </span>, 
-    document.getElementById('root')
+  <BrowserRouter>
+    <Controller />
+  </BrowserRouter>,
+  document.getElementById("root")
 );
